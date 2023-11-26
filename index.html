@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flames</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pyscript.net/releases/2023.11.1/core.css"
+    />
+    <script
+      type="module"
+      src="https://pyscript.net/releases/2023.11.1/core.js"
+    ></script>
+  </head>
+  <body>
+    <style>
+      #result {
+        font-size: 25px;
+        border-radius: 5px;
+        margin-top: 4%;
+        width: 100%;
+        text-align: center;
+        background-color: grey;
+        color: white;
+        font-family: Geneva sans-serif;
+      }
+      .whole {
+        margin-top: 3%;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        padding-left: 20px;
+        box-shadow: 11px 4px 28px 5px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 11px 4px 28px 5px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 11px 4px 28px 5px rgba(0, 0, 0, 0.5);
+      }
+      .whole h3 {
+        font-family: Geneva, sans-serif;
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+      }
+      .whole input:focus {
+        border-color: grey;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px grey;
+      }
+    </style>
+    <script type="py" src="./main.py" config="./pyscript.json"></script>
+
+    <div class="container">
+      <div class="whole">
+        <form action="">
+          <h3>FLAMES</h3>
+          <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" class="fname form-control" id="fname" />
+          </div>
+          <div class="form-group">
+            <label for="sname">Second Name:</label>
+            <input type="text" class="sname form-control" id="sname" />
+          </div>
+        </form>
+        <button py-click="Flames" class="btn btn-secondary">
+          Find the match!!
+        </button>
+        <div class="container" id="result"></div>
+      </div>
+    </div>
+  </body>
+</html>
