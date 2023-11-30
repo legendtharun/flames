@@ -74,10 +74,10 @@ function Flames() {
             final_list.push(flist1[i]);
           }
           Remove(flist, flist1[i]);
-          if (slist.includes(flist1[i])) {
+          while (slist.includes(flist1[i])) {
             for (let f = 0; f < slist.length; f++) {
               if (slist[f] === flist1[i]) {
-                Remove(slist, flist1[i]);
+                slist.splice(f, 1);
               }
             }
           }
