@@ -25,17 +25,8 @@
     />
   </head>
   <body>
-    <script type="py" src="./main.py" config="./pyscript.json"></script>
-    <script>
-      function Result() {
-        class_list = document.getElementById("result").classList;
-        class_list.add("active_result");
-        console.log(true);
-      }
-      function Headclick() {
-        window.location.href = ".";
-      }
-    </script>
+    <script type="text/javascript" src="./main.js"></script>
+
     <div class="container-fluid back">
       <div class="whole container">
         <form action="">
@@ -49,9 +40,7 @@
             <input type="text" class="sname form-control" id="sname" />
           </div>
         </form>
-        <button py-click="Flames" onclick="Result()" class="btn">
-          Find the match!!
-        </button>
+        <button onclick="Flames()" class="btn">Find the match!!</button>
         <div class="container" id="result"></div>
         <div class="footer">
           <span>
