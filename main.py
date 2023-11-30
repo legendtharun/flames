@@ -35,7 +35,7 @@ def Flames(event):
                     for x in range(0,count):
                         final_list.append(i)
                     flist.remove(i)
-                    if i in slist:
+                    while i in slist:
                         for item in slist:
                             if item==i:
                                 slist.remove(i)
