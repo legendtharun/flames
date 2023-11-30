@@ -1,3 +1,4 @@
+#This is for integrating with py-script instead of js
 from pyscript import document
 
 
@@ -43,8 +44,7 @@ def Flames(event):
                     slist.remove(i)
 
         for i in slist:
-            if i not in final_list:
-                final_list.append(i)      
+            final_list.append(i)      
         
         if len(final_list)==1:
             flames=["s"]
