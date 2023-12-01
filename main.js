@@ -25,8 +25,8 @@ function Headclick() {
 function Flames() {
   let fname = document.getElementById("fname").value;
   let sname = document.getElementById("sname").value;
-  fname.toLowerCase();
-  sname.toLowerCase();
+  fname=fname.toLowerCase();
+  sname=sname.toLowerCase();
   let flist = [];
   let slist = [];
   let flist1 = [];
