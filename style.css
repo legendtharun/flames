@@ -111,5 +111,13 @@ body{
 .button{
   display: flex;
 }
+@media screen and (max-width:500px) {
+  #button2{
+    margin-left: 10px;
+  }
+  .btn{
+    width: 130px;
+  }
+}
   
   
