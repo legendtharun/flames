@@ -58,6 +58,7 @@
     margin: 10px;
     margin-left: 30px;
     width: 150px;
+    padding: 8px;
     
   }
   .btn:hover{
@@ -107,6 +108,8 @@ body{
 .footer a:hover{
     border-bottom: 2px solid #9f1d99;
 }
-
+.button{
+  display: flex;
+}
   
   
