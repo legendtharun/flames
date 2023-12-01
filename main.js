@@ -15,6 +15,12 @@ function Remove(a, b) {
     }
   }
 }
+function ResetForm() {
+  document.querySelector("#form").reset();
+  class_list = document.getElementById("result").classList;
+  class_list.remove("active_result");
+  document.getElementById("result").innerHTML = "";
+}
 function Result() {
   class_list = document.getElementById("result").classList;
   class_list.add("active_result");
