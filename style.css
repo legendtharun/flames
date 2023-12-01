@@ -113,7 +113,7 @@ body{
 }
 @media screen and (max-width:500px) {
   #button2{
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .btn{
     width: 130px;
