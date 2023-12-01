@@ -25,8 +25,8 @@ function Headclick() {
 function Flames() {
   let fname = document.getElementById("fname").value;
   let sname = document.getElementById("sname").value;
-  fname=fname.toLowerCase();
-  sname=sname.toLowerCase();
+  fname = fname.toLowerCase();
+  sname = sname.toLowerCase();
   let flist = [];
   let slist = [];
   let flist1 = [];
@@ -59,7 +59,6 @@ function Flames() {
       }
     }
   }
-
   function MainFlames() {
     for (let i = 0; i < flist1.length; i++) {
       if (!final_list.includes(flist1[i])) {
@@ -90,7 +89,6 @@ function Flames() {
     for (let x = 0; x < slist.length; x++) {
       final_list.push(slist[x]);
     }
-
     let flames;
     if (final_list.length === 1) {
       flames = ["s"];
