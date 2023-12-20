@@ -151,7 +151,7 @@ body{
 
 @keyframes toggle{
   from{ margin-left: 0;}
-  to{margin-left: 4%;}
+  to{margin-left: 10%;}
 }
 #note{
   width: 80%;
