@@ -1,10 +1,9 @@
-#This is for integrating with py-script instead of js
-from pyscript import document
 
 
-def Flames(event):
-    fname=document.getElementById('fname').value
-    sname=document.getElementById('sname').value
+
+def Flames():
+    fname=input("Enter the name:")
+    sname=input("Enter the name:")
     fname=fname.lower().strip()
     sname=sname.lower().strip()
     flist,slist,final_list=[],[],[]
@@ -45,7 +44,9 @@ def Flames(event):
 
         for i in slist:
             final_list.append(i)      
-        
+        print(slist)
+        print(flist)
+        print(final_list)
         if len(final_list)==1:
             flames=["s"]
         elif len(final_list)==2:
@@ -92,16 +93,17 @@ def Flames(event):
             result="You both remain as enemys"
         else:
             result="You both are siblings"
-        document.getElementById("result").innerHTML=result
+        print(result)
         
     if flist1==slist1:
         result="Both are same names"
-        document.getElementById("result").innerHTML=result
+        print(result)
     elif len(flist1)==0 or len(slist1)==0:
         result="One of the names is empty"
-        document.getElementById("result").innerHTML=result
+        print(result)
     else:
         MainFlames()
+Flames()
         
     
 
