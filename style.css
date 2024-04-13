@@ -295,6 +295,7 @@ body{
     font-size: 2.369rem;
       
   }
+ 
 }
 @media screen and (max-width:450px){
   .loading_head img{
@@ -302,7 +303,7 @@ body{
   width: 150px;
   }
   .flames h1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
       
   }
   .tunes{
@@ -311,5 +312,8 @@ body{
   border-radius: 20px;
   background-color: rgb(80,80,80);
   margin: 5px;
+  }
+  .foot h3{
+    font-size: 0.5rem;
   }
 }
